@@ -1,0 +1,38 @@
+.peculiarities {
+  padding-bottom: 0;
+}
+.subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.benefits {
+  display: flex;
+
+  &-text {
+    text-align: left;
+  }
+
+  &-item {
+    min-width: 270px;
+  }
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: var(--background-secondary-color);
+}
