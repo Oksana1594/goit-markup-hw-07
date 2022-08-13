@@ -13,28 +13,25 @@ header {
 .logo {
   font-family: var(--secondary-font);
   color: var(--accent-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(26px, 700, 31px);
   letter-spacing: 0.03em;
   margin-right: 93px;
-}
-.logo-black {
-  color: #000000;
-}
-.logo-white {
-  color: var(--contrasting-color);
+
+  &_theme_dark {
+    color: var(--contrasting-color);
+  }
+
+  &_theme_white {
+    color: #000000;
+  }
 }
 
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu__link,
-.current {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.menu__link {
+  @include font(14px, 500, 16px);
   transition: color var(--transition-duration-timing-function);
   padding: 36px 0;
   color: var(--title-text-color);

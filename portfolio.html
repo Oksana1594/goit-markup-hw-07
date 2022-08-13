@@ -18,42 +18,40 @@
   <body>
     <!-- Хедер -->
     <header>
-      <!-- Навігація -->
+      <!-- Навигация -->
+
       <div class="container main-header">
         <nav class="navigation">
           <a href="./index.html" lang="en" class="logo"
-            >Web<span class="logo-black">Studio</span></a
+            >Web<span class="logo_theme_white">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="item-nav">
-              <a href="./index.html" class="link">Студия</a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студия</a>
             </li>
 
-            <li class="item-nav">
-              <div class="portfolio">
-                <a href="./portfolio.html" class="current">Портфолио</a>
-              </div>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link current">Портфолио</a>
             </li>
 
-            <li class="item-nav"><a href="" class="link">Контакты</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
           </ul>
         </nav>
 
-        <!-- Контактна інформація -->
-
-        <ul class="contact-info">
-          <li class="item-contact">
-            <a href="mailto:info@devstudio.com" class="link-contact">
-              <svg class="contact-mail">
+        <!-- Контактная информация -->
+        <ul class="contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="item-contact">
-            <a href="tel:+380961111111" class="link-contact">
-              <svg class="contact-phone">
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -71,28 +69,28 @@
         <div class="container">
           <h1 class="visually-hidden">Список проектов</h1>
           <ul class="filter">
-            <li class="filter-item">
-              <button type="button" class="button secondary current-filter">Все</button>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Все</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button secondary">Веб-сайты</button>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Веб-сайты</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button secondary">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Приложения</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button secondary">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="button secondary">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Маркетинг</button>
             </li>
           </ul>
 
           <!-- Картотека проектів -->
 
           <ul class="card-set">
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/technocryac.jpg"
@@ -106,15 +104,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Технокряк</h2>
-                  <p class="name-project">Веб-сайт</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Технокряк</h2>
+                  <p class="card-set__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/neworlean.jpg"
@@ -128,15 +126,17 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                  <p class="name-project">Дизайн</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="card-set__text">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/seafood.jpg"
@@ -150,15 +150,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="name-project">Приложение</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card-set__text">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/prime.jpg"
@@ -172,15 +172,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Проект <span lang="en">Prime</span></h2>
-                  <p class="name-project">Маркетинг</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Проект <span lang="en">Prime</span></h2>
+                  <p class="card-set__text">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/boxes.jpg"
@@ -194,15 +194,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Проект <span lang="en">Boxes</span></h2>
-                  <p class="name-project">Приложение</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Проект <span lang="en">Boxes</span></h2>
+                  <p class="card-set__text">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-setitem">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/inspiration.jpg"
@@ -216,15 +216,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 lang="en" class="subject">Inspiration has no Borders</h2>
-                  <p class="name-project">Веб-сайт</p>
+                <div class="card-set__info">
+                  <h2 lang="en" class="card-set__name">Inspiration has no Borders</h2>
+                  <p class="card-set__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/limitededition.jpg"
@@ -238,15 +238,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Издание<span lang="en">Limited Edition</span></h2>
-                  <p class="name-project">Дизайн</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Издание<span lang="en">Limited Edition</span></h2>
+                  <p class="card-set__text">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link-" href="">
                 <div class="box-overlay">
                   <img src="./images/projects/lab.jpg" alt="этикетка" width="370" height="294" />
                   <p class="overlay">
@@ -255,15 +255,15 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 class="subject">Проект <span lang="en">LAB</span></h2>
-                  <p class="name-project">Маркетинг</p>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Проект <span lang="en">LAB</span></h2>
+                  <p class="card-set__text">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="link-project" href="">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
                 <div class="box-overlay">
                   <img
                     src="./images/projects/growing.jpg"
@@ -277,9 +277,9 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="name-projects">
-                  <h2 lang="en" class="subject">Growing Business</h2>
-                  <p class="name-project">Приложение</p>
+                <div class="card-set__info">
+                  <h2 lang="en" class="card-set__name">Growing Business</h2>
+                  <p class="card-set__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -289,74 +289,74 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer basement">
-      <div class="container cellar">
+    <footer class="footer">
+      <div class="container container-footer">
         <div class="company-address">
-          <a href="./index.html" lang="en" class="logo footer">
-            Web<span class="logo-white footer">Studio</span></a
+          <a href="./index.html" lang="en" class="logo">
+            Web<span class="logo_theme_dark">Studio</span></a
           >
           <address>
-            <ul class="end-page">
-              <li class="address footer-entrance">г. Киев, пр-т Леси Украинки, 26</li>
+            <ul class="address">
+              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
 
-              <li class="footer-entrance">
-                <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
               </li>
 
-              <li>
-                <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="invitation-box">
-          <p class="subtitle-invitation">присоединяйтесь</p>
+          <p class="invitation-text">присоединяйтесь</p>
           <ul class="social-list">
-            <li class="social-list-item">
-              <a href="" class="social-list-link-footer">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link-footer">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link-footer">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link-footer">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="invitation-box-position">
-          <p class="subtitle-invitation">Подпишитесь на рассылку</p>
-          <form class="mailing-list-form">
+        <div class="subscription-box">
+          <p class="invitation-text">Подпишитесь на рассылку</p>
+          <form class="subscription-form">
             <label>
               <input
-                class="mailing-list-address"
+                class="subscription-form__mail-address"
                 name="user_email"
                 type="email"
                 placeholder="E-mail"
               />
             </label>
-            <span class="subscribe-wrapper">
-              <button type="submit" class="subscribe-btn">
+            <span class="subscription-form__wrapper">
+              <button type="submit" class="subscription-form__btn">
                 Подписаться
-                <svg class="subscribe-btn-icon" width="24" height="24">
+                <svg class="subscription-form__icon" width="24" height="24">
                   <use href="./images/icons.svg#iconsend"></use>
                 </svg>
               </button>

@@ -4,9 +4,7 @@
   gap: 10px;
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -22,9 +20,23 @@
 
   &__icon {
     fill: var(--contrasting-color);
-
-    &-theme-lite {
-      fill: var(--svg-color);
-    }
   }
+}
+
+.social-list__link_theme_lite {
+  background-color: var(--contrasting-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-list__icon_theme_lite {
+  fill: var(--svg-color);
+}
+
+.social-list__link_theme_lite:hover .social-list__icon_theme_lite,
+.social-list__link_theme_lite:focus .social-list__icon_theme_lite {
+  fill: var(--contrasting-color);
 }
