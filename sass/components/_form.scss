@@ -27,14 +27,19 @@
   letter-spacing: 0.01em;
   color: #000000;
   transition: border-color var(--transition-duration-timing-function);
-}
 
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 12px;
   fill: #212121;
   transition: fill var(--transition-duration-timing-function);
 }
@@ -61,14 +66,6 @@
   position: relative;
 }
 
-.modal-input-icon {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  margin-left: 12px;
-}
-
 .modal-form-message {
   resize: none;
   width: 100%;
@@ -79,30 +76,19 @@
   outline: none;
   margin-bottom: 20px;
   transition: border-color var(--transition-duration-timing-function);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.modal-form-message:focus {
-  border-color: var(--accent-color);
-}
-
-.modal-form-message::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-check-desc::before {
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 7px;
-  margin-left: 13px;
-  content: '';
-}
 
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
@@ -124,6 +110,18 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 30px;
+
+  &::before {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 7px;
+  margin-left: 13px;
+  content: '';
+}
 }
 
 .agreement-link {
@@ -145,10 +143,12 @@
   border: transparent;
   border-radius: 4px;
   transition: box-shadow var(--transition-duration-timing-function);
-}
 
-.modal-button-submit:hover,
-.modal-button-submit:focus {
+  &:hover,
+  &:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+}
+
+

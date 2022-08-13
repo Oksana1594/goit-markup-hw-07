@@ -37,28 +37,3 @@
   margin-bottom: 16px;
   text-align: center;
 }
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-
-  &-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--contrasting-color);
-    fill: var(--svg-color);
-    transition: fill var(--transition-duration-timing-function),
-      background-color var(--transition-duration-timing-function);
-
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-      fill: var(--contrasting-color);
-    }
-  }
-}

@@ -1,0 +1,30 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: fill var(--transition-duration-timing-function),
+      background-color var(--transition-duration-timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: var(--contrasting-color);
+
+    &-theme-lite {
+      fill: var(--svg-color);
+    }
+  }
+}
